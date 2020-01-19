@@ -13,7 +13,7 @@ The second thing to do was to subscribe to a RIT mailing list, and to introduce 
 
 Then comes the HFOSS journal. This journal is an informal way to put my thoughts on paper (or almost paper), thoughts which are shared with the instructor, but which aren't not available to the public. It requires a daily entry and provides the content used to fill these blog posts. From a technical point of view, this journal is a simple git repository containing a README.md file which itself contains all entries in descending chronological order.
 
-Then onto what you're currently reading : a blog. This is more of a challenge as it's not something I've already done in the past. To create my blog, I first tried to use [WordPress][wordpress]. I created an account and started customizing my blog's look. But my I got to choosing a domain name, it seemed that none of the options available was free of charge. Thus, I deleted my account and went for the [GitHub Pages][github-pages] option. A GitHub page consists in turning a GitHub repository into a website. Also, [Jekyll][jelyll] offers a very simple way to turn markdown files into a blog using GitHub Pages. It still might still need some customizing but this blog is now online and ready to be used.
+Then onto what you're currently reading : a blog. This is more of a challenge as it's not something I've already done in the past. To create my blog, I first tried to use [WordPress][wordpress]. I created an account and started customizing my blog's look. But my I got to choosing a domain name, it seemed that none of the options available was free of charge. Thus, I deleted my account and went for the [GitHub Pages][github-pages] option. A GitHub page consists in turning a GitHub repository into a website. Also, [Jekyll][jekyll] offers a very simple way to turn markdown files into a blog using GitHub Pages. It still might still need some customizing but this blog is now online and ready to be used.
 
 Finally, it was time to share this blog with the class using GitHub. That meant cloning the class's repository, adding a YAML file that references tis blog, pushing it to GitHub and issuing a pull request. As I'm not yet super familiar with the *pull request* mechanism, I first looked at some tutorials on how exactly all this is supposed to be done.
 
@@ -21,7 +21,7 @@ And that's it for the first flight.
 
 [freenode-webclient]: https://webchat.freenode.net/
 [hexchat]: https://hexchat.github.io/
-[wordpress]: WordPress.com
+[wordpress]: https://wordpress.com
 [github-pages]: https://pages.github.com/
 [jekyll]: https://jekyllrb.com/
 

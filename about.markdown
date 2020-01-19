@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This blog contains a history of all the work done by me, ymoullec, during HFOSS@RIT courses.
+This blog contains a history of all the work done by me, ymoullec, during [HFOSS@RIT][HFOSS-link] courses.
+
+HFOSS is a courses given by D. Joe Anderson at the Rochester Institute of Technology and stands for Humanitarian Free and Open-Source Software.
+
+[HFOSS-link]: http://hfoss.rocfoss.org/
 
 <!-- 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

@@ -12,7 +12,7 @@ I'll go through the two main tasks that I worked on during this week : that is t
 
 I've always struggled with understanding what was going on when using git.
 In fact it wasn't such a struggle as it was a constant fear of messing something up.
-I knew git is supposed to help with that, however like always with tools you don't master, there's always the fear to misuse it and make irreversible and devastating changes.
+I knew git is supposed to help with that, however, like always when working with tools you don't master, there's always the fear to misuse it and make irreversible and devastating changes to your project.
 
 The basic `git clone` to get your GitHub/GitLab repository on your local machine, then `git add`, `git commit`, `git push` to make some changes on the master branch worked fine with me.
 For me it was just like saving a file, but with a slightly trickier syntax.
@@ -20,36 +20,37 @@ But when it came to resolving merge conflicts, undoing changes, working with oth
 
 That’s why I followed this [git tutorial][git-tuto] on the basic principles of git.
 It was a great way to review all the basic commands and make sure I understood them correctly.
-I didn’t actually learn many new practical skills following this tutorial, however, I got to know more about the underlying concepts of git such as repos, remotes and branches.
+I didn’t actually learn many new practical skills following this tutorial, however, I got to know more about the underlying concepts of git such as **repos**, **remotes** and **branches**.
 I had obviously already seen these notions, but this accurate/in-depth reminder came in very handy.
 Maybe it doesn’t seem like much as far as progress is concerned, but I think it’s exactly what I lacked the most, it helped a great deal answering the recurrent question : what exactly I am doing ?
-For example, the mere concept of cloning a local repo onto the same computer seemed really strange to me and I didn’t even know that it was a thing.
+For example, the mere concept of **cloning** a local repo onto the same computer seemed really strange to me and I didn’t even know that it was a thing.
 That’s because I didn’t really understand what it meant to clone a repo.
-Also, during the [first flight assignment][first-flight], I got to work on forks and pull requests.
-Getting to know these concepts more in-depth makes me realize the power git provides, power that overcome greatly the *distant save* mechanism I used it for in the past.
+Also, during the [first flight assignment][first-flight], I got to work on **forks** and **pull requests**, so that work came is as a good complement.
+Getting to know these concepts more in-depth makes me realize the power git provides, power that overcome greatly the *distant save* workflow I used it for in the past.
 However, there’s still a lot for me to learn about git, especially getting familiar with good practices.
 For instance, I always tend to commit and push a lot sooner than what I should and end up pushing patch commits afterwards.
 
 # Reading assignment : Constructivism
 
-This article introduces the notion of constructivism, an educational philosophy that promotes inquiry-based education.
+This [article][constructivism] introduces the notion of constructivism, an educational philosophy that promotes **inquiry-based education**.
 It doesn't actually give a teaching method but encourages students to have an active role in their education.
 The article provides some historical background to constructivism theories which were popularized in the 1960s by Jean Piaget.
 It also gives examples of teaching supported by constructivism.
-To give the ability to a class of ten-year-old students to add numbers from 1 to 100, a constructivist approach would make them look for a pattern in the numbers instead of brute forcing the problem.
-Then it highlights the importance of group works on the teaching process.
-After that, it refers to the scientific evidence that supports constructivism theories.
-Finally, it gives the limitations of constructivism-based teaching methods which are that the current teaching assessments mostly rely on standardized testing, which are not compatible with these kinds of teaching.
+For instance, to give the ability to a class of ten-year-old students to add numbers from 1 to 100, a constructivist approach would make them look for a pattern in the numbers instead of brute forcing the problem.
+Then the article highlights the importance of group works on the teaching process.
+After that, it refers to the scientific evidence that supports constructivist theories.
+Finally, it gives some **limitations** of constructivism-based teaching methods, one of which is that the current teaching assessments mostly rely on standardized testing, which are not compatible with these kinds of teaching.
 
 I will not question the scientific evidence behind constructivism.
 I'm just a little bit skeptical whether the example of adding numbers is actually generalizable.
-The way it's taught is one thing (and a good thing here), but finding a simple trick to solve apparently complex problems doesn't work every time.
-In my opinion, it would be great if it could be generalized, however, I also agree with the end of the article.
+The way it's taught is one thing (and a good thing in this situation), but finding a simple trick to solve apparently complex problems doesn't work every time.
+In my opinion, it would be a great thing if constructivist approaches could be generalized, however, I also agree with the end of the article.
 These are time-consuming and personalized processes that are mostly not compatible with our current educational system.
 It also raise more global questions such as the goal of education.
 What purpose should constructivism help use achieve ?
 Should it help students prepare for your their future job ?
 Should it do its best to emancipate them ?
+These question society as a whole and, unfortunately, I won't be able to answer them in one or two sentences.
 
 [git-tuto]: http://gitimmersion.com/index.html
 [first-flight]: https://ymoullec.github.io/assignment/2020/01/15/first-flight.html

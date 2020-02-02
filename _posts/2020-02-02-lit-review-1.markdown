@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Literature Review 1 - Allison Parrish's Programming is Forgetting"
+date:   2020-02-02 12:00:00 +0100
+categories: assignment literature-review
+---
+
+The talk that will be discussed in this blog post is called [*Programming is Forgetting: Toward a New Hacker Ethic*][programming-forgetting].
+It was given by Allison Parrish during the *Open Hardware Summit 2016* on 10/07/2016 and deals with Parrish’s disagreements with Steven Levy’s hacker ethic (described in *Hackers: Heroes of the Computer Revolution*).
+At the end of the talk, she gives her alternative to Levy’s ethic.
+
+To summarize my opinion on this talk, I’d say that **I agree on 95%** of the speaker’s viewpoint.
+I just have some minor questions about some of Parrish’s interpretations of Steven Levy’s book.
+The rest of it, I think it’s well presented and illustrated, and that it addresses crucial points.
+Also because the point of this post is to react to Parrish’s talk, I will have to give my opinion on her analysis of Steven Levy’s book, **which I haven’t read**.
+It’s important to keep that in mind while reading this post.
+
+Parrish starts by saying that to understand computer programming, you need to know about its history and culture, and that a part of this history revolves around hackers and **the hacker culture**.
+That’s why she chose to dive into her disagreement with Steven Levy’s book on hacker ethic, which describes one of the components of this legacy.
+
+One of the things that first came to my mind when reading this talk was that it addressed important but kind of obvious questions.
+But then I realized that it was not really a great criticism.
+Also, going back at the beginning of the talk, Parrish actually answers her future critics by saying :
+“*The conclusions I reach in this talk might seem obvious to some of you, but I hope it’s valuable to see the path that I followed to reach those conclusions.*”
+She also states, using a quote from Ursula K. Le Guin – that I definitely will need to read at some point –, that discovering something new is often (or even always) just overwriting reality with your own point of view, which I think is **very relevant as an introduction to any talk**.
+
+Then she gives Levy’s guidelines on hacker ethic which I think are important to quote in this post :
+- Access to computers should be unlimited and total.
+- All information should be free.
+- Mistrust authority – promote decentralization.
+- Hackers should be judged by their hacking, not bogus criteria such as degrees, age, race or position.
+- You can create art and beauty on a computer.
+- Computers can change your life for the better.
+
+As you can quite clearly see with these few sentences, **Levy celebrates and glorifies hackers**, which are defined to be “*programmers and designers who regard computing as the most important thing in the world*”.
+
+Commenting on these guidelines, Parrish rightfully says : “*How could any of these things be bad?*”.
+That’s the thing with giving general, broad, apparently positive guidelines to describe what people’s behavior should be : it’s quite difficult to prove they’re wrong without getting more concrete and thus having to apply and interpret these few sentences.
+If I were the one writing an ethic – and believe me, I’m not egocentric enough, or let’s say I’m not ambitious enough, to pretend that my behavior should be adopted by everyone – I would immediately pounder these general statements with explanations and limits and concrete situations where they apply/do not apply, try to uncover hidden contradictions between them, make sure I’m well understood by the ones who’ll get their hands and eyes on them, re-writing and completing them along the way.
+Here, my feeling is that the author either didn’t take seriously the task he undertook, or that Parrish’s presentation of it has strong biases (I tend to go for the first option here).
+
+Parrish tries to overcome this **lack of step back** by commenting on an anecdote from the book and applying the authors principles to it. It appears either that Levy did not bother to apply its own principles to a situation he himself described in the book, or that the principles are broad enough to be interpreted in contradicting ways, the resulting judgement being in one case that the situation/the hacker’s behavior was good and in the other that it was bad. According to Parrish, “*the book is replete with examples like this*”, which, in my opinion, **completely disqualifies the ethic**.
+
+Then Parrish identifies what she thinks is **an underlying philosophy** behind Levy’s hacker ethic by analyzing one of his principles : The Hands-On Imperative. Or should I say by analyzing a few expressions from this principle. I feel like her entire argument here relies on two expressions : “*[...] lessons can be learned about the systems—about the world—from taking things apart, seeing how they work*” and “*Imperfect systems infuriate hackers*”. From these two statements, she infers that Levy thinks that “*given sufficient access [...] it’s possible to make a computer program that perfectly models the world*”, which I think is a little bit far-fetched. Saying that Levy sees the world as a system : yes, it seems like it. Saying that because he uses the word imperfect, he thinks that things (including programs) can be made perfect, that’s already less convincing to me : we all use the word imperfect without any implication that a perfect equivalent exists. Saying that taking things apart to understand how they work means taking them out of their original context, once again, I’m not totally following.
+
+To me, the Hands-On Imperative is a call to better understanding the world around us, to improve our general knowledge and technique. It certainly relies on a technical view of the world (that I don’t share with Levy either) and sets this goal such a priority that, according to Levy, nothing should stand in the way of hackers. I think it would have been more relevant to criticize him on this last aspect than to over-interpret a few words in an already extreme statement. Once again, I haven’t read the book, and maybe what Parrish refers to has been developed elsewhere.
+
+Even if I think the link she establishes between the Hands-On Imperative and this philosophy is quite weak, it doesn’t disqualify the way she criticizes the philosophy itself. Parrish’s next interventions could be summarized with this single quote : “*So there’s a difference between the abstraction and the reality.*”. It’s difficult to disagree. **Every model, representation, of course brings its share of approximations and flaws, and it also relies on assumptions and biases, which are often unclear, even to the authors themselves**. And even if that’s what I first thought was obvious, I think it’s also fundamental. It’s crucial to have in mind when building a model or writing a program, when asking yourself what you should build or write, or if you even should, that it will always reflect a particular point of view, that **Programming is Forgetting**.
+
+Finally, replacing the less convincing statements of Levy’s hacker ethic with questions that hackers should ask themselves makes up for **a much saner and greatly improved hacker ethic** and ends the talk on a high note.
+
+[programming-forgetting]: http://opentranscripts.org/transcript/programming-forgetting-new-hacker-ethic/
+

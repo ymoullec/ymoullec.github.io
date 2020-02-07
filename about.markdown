@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This blog contains a history of all the work done by me, ymoullec, during HFOSS@RIT (Humanitarian Free and Open Source Software at the Rochester Institute of Technology) courses.
+This blog contains a history of all the work done by me, ymoullec, during HFOSS@RIT courses.
 
 HFOSS is a courses given by D. Joe Anderson at the Rochester Institute of Technology and stands for Humanitarian Free and Open-Source Software.
 

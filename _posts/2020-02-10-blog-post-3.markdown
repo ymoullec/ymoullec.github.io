@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Blog Post 3"
+date:   2020-02-10 16:00:00 +0100
+categories: assignment
+---
+
+# HFOSS hours meeting
+
+This section of the blog post relates an event I went to on the 16th of January.
+I know that this is kind of late to discuss this event, but it occurred to me that if this counts as a meetup (one of our assignments), it should not only be mentioned in my journal, but in this blog as well.
+I know this is kind of low as far as motivations go, but anyways, let’s crack on.
+I’ll do my best to remember more than the few lines I wrote for my journal.
+
+So about a couple weeks ago, I went to the HFOSS Hours meeting and surprise, there were actually people there this time (I went the day before by mistake).
+As you have (or will) probably understand reading this blog, I'm not – yet? – the *develops-in-his-room-at-night* kind of guy.
+That's why this blog mainly deals with official class work as well as reviewing basics of HFOSS, but not really with personal projects.
+So as you can imagine, HFOSS Hours seemed to me as sort of a cult thing.
+I have about zero coding languages/framework/technology culture.
+That’s why most of the time I spent at this HFOSS hours meeting was spent wondering what people were actually talking about, like if they were talking a totally foreign language (*spoiler alert*, I’m French, so they actually were).
+I did not really feel comfortable participating in vigorous debates on topics I don’t know or don’t have strong opinions about.
+HFOSS hours also seemed to be a time where people share the personal projects they’re working on, which is interesting to me but can be hard to follow and even harder to participate in as I don’t really have any personal projects worthy of attention.
+Finally, Ben Goldberg spent a decent amount of time giving a talk about the Rust programming language, which was also of interest to me.
+
+# Reading about simple open source software licenses
+
+Today I read the [commentary][gnu-licenses] and license text (either on [FSF][fsf] or [OSI][osi]) for 5 software licenses :
+- the Original BSD license (BSD = Berkeley Software Distribution),
+- the modified BSD license,
+- the freeBSD licence,
+- the ISC license (ISC = Internet Systems Consortium),
+- the MIT expat license (MIT = Massachusets Institute of Technology).
+
+From the original BSD to the freeBSD license, the legal text goes from 4 to 2 clauses.
+The two discarded clauses both deal with advertising and promotion.
+From what I understand from the commentary, one of these clauses was removed for compatibility purposes (with GNU GPL notably).
+This fact highlights that the broad term of open source license hides a more **complex reality**.
+
+Then onto the ISC license, which is cousin to the University of Washington license.
+The UW license seems to lead to some interpretation problems, that's why GNU doesn't recommend using ISC, even if ISC state that they don't have the same interpretation as UW.
+GNU states that ISC is similar to the freeBSD license, which could be used instead.
+Finally, the MIT expat license falls into the same category every 4 other licenses.
+The ISC and MIT expat licenses are very brief compared to the 3 previous ones, which are not that long either.
+They contain pretty much a single clause, as well as, like every other license, a stream of capitalized legal jargon at the end.
+
+It's fun to see that each commentary for these 5 licenses recommends using the **Apache 2.0 license**.
+The argument given by GNU for Apache 2.0 is that it blocks patent treachery.
+
+These 5 licenses are all described as **lax**, **permissive** and **non-copyleft** free software license.
+Lax open source software licenses allow the distributed code to be read, modified, redistributed, and ran, with little requirements.
+Permissive licenses are opposed to copyleft licenses (another type of free software license), which enforces the license to derivative works.
+Proprietary work can accept permissively licensed works whereas it cannot include copyleft licensed work.
+
+[gnu-licenses]: https://www.gnu.org/licenses/license-list.html
+[fsf]: https://directory.fsf.org/wiki/Main_Page
+[osi]: https://opensource.org/licenses/

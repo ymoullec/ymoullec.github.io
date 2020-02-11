@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog Post 3"
+title:  "Blog Post 4"
 date:   2020-02-10 16:00:00 +0100
 categories: assignment
 ---
@@ -13,9 +13,9 @@ I know this is kind of low as far as motivations go, but anyways, let’s crack 
 I’ll do my best to remember more than the few lines I wrote for my journal.
 
 So about a couple weeks ago, I went to the HFOSS Hours meeting and surprise, there were actually people there this time (I went the day before by mistake).
-As you have (or will) probably understand reading this blog, I'm not – yet? – the *develops-in-his-room-at-night* kind of guy.
+As you have (or will) probably understand reading this blog, I'm not – yet? – the *develops-in-his-room-at-night* kind of person.
 That's why this blog mainly deals with official class work as well as reviewing basics of HFOSS, but not really with personal projects.
-So as you can imagine, HFOSS Hours seemed to me as sort of a cult thing.
+So as you can imagine, HFOSS Hours seemed to me as some sort of a cult.
 I have about zero coding languages/framework/technology culture.
 That’s why most of the time I spent at this HFOSS hours meeting was spent wondering what people were actually talking about, like if they were talking a totally foreign language (*spoiler alert*, I’m French, so they actually were).
 I did not really feel comfortable participating in vigorous debates on topics I don’t know or don’t have strong opinions about.

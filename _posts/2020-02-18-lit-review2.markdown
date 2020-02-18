@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "Literature Review 2 - Free or Open Source Software"
+date:   2020-02-18 16:00:00 +0100
+categories: assignment literature-review
+---
+
+This blog posts discusses two articles respectively dealing with how the term "open source software" was invented and why, according to the author of the second article, "free software" should be used instead of "open source software".
+
+If I had to mark each of these articles, they would both get a **5/5**.
+
+I will start by reporting on what I gathered from both articles, before giving my opinion on the arguments used in the second one and taking a step back to analyze both.
+
+# Open Source
+
+The first article is called [*How I coined the term 'open source'*][coin-open-source] and was written by Christine Peterson early 2018 on [opensource.com](https://opensource.com).
+As you probably can imagine reading the title, Christine Peterson is the person who invented the term "open source software" as an alternative to using "free software".
+20 years later, she reports on the context and history of the invention.
+
+Christine Peterson reports that "open source software" was invented to facilitate understanding for newcomers and businesses.
+Indeed, the term "free software" could mislead newcomers to think that it focuses on price.
+
+In the late 1990s Christine Peterson participated in weekly meetings at Foresight Institute.
+They had identified free software as a potential solution to enhancing computer security and reliability and were trying to come up with strategies to promote it.
+However, they kept running into this clarity problem : "\[...\] *free as in freedom, not free as in beer*".
+That's when Christine Peterson came up with the term "open source software", which she described as "*not ideal,* \[but\] *good enough*".
+
+During a meeting on strategy, the new term was slipped into the conversation.
+Once the discussion had drifted onto the topic of terminology, "open source" was agreed to be the best propositions among the few they had come up with.
+In the following few months, Eric Raymond and Tim O'Reilly respectively worked on promoting the term to the media as well as to businesses.
+
+Even if it's not really the point of this article, I'll shortly discuss the reasons for switching to the term "open source software".
+I get that the English word "free" means "free of charge" as well as "free as in freedom", and that because software can be sold, meanings can be confused.
+However, and maybe this is because I'm French, I don't really confuse the two in this specific context.
+Indeed, French has two separate words that translate to "free", "libre" derived from "liberté" (liberty/freedom) and "gratuit" (free of charge).
+Naturally, "free software" translate to "logiciel libre", and, having heard the French term before the English one, I did not confuse free with free.
+Also, if clarifying "free software" only requires to say "\[...\] *free as in freedom, not free as in beer*", I don't think it's that much of a problem.
+
+# Free Software
+
+The second article is called [*When Free Software Isn't Better*][free-soft-better] and was written by Benjamin Mako Hill and published on November 19, 2010 on his blog.
+It argues that the term "open source software" should not be used to describe free software licenses because it hides the strong political implications that come with making software "free".
+
+The author develops two main arguments that I will report on and criticize.
+
+1. "\[The\] *promise of open source is better quality, higher reliability, more flexibility* \[...\]"
+(Open Source Initiative).
+This promise however is not always realized, especially in early-stage free software.
+What open source advocates would argue is that the software will get better over time and with luck.
+What free software advocates would argue is that with this definition, open source software suffers by comparison with proprietary software because the focus is made on overall performance while free software’s main focus is made on users’ freedom, which is here from the start.
+
+2. "*The collaborative* \[...\] *process at the heart of the definition of open source bears little resemblance to the practice of software development in the vast majority of projects under free software licenses.*"
+
+I partly agree with the first argument.
+Firstly, we should make sure that the definition of open source indeed focuses mainly on improving quality/reliability/flexibility like the citation suggests.
+Then, I don’t really think that open source, as an expression, inherently evokes this focus.
+It would be interesting to see what people actually understand by "open source" despite OSI’s advertising strategy.
+Open source software makes me think of freedom as much as free software does, and performance improvement doesn’t immediately come to mind.
+If this perception is shared by the population, then free software advocates’ criticism targets OSI’s way of advertising open source, not the term "open source" itself.
+Also, I should say that I agree with free software’s focus on freedom rather than performance/features.
+
+In the second argument, I better see the link between the term itself and the collaborative aspect of "open source software", which immediately comes to mind, and does not when talking about free software, which carries a more juridical connotation.
+I’m inclined to trust that it’s indeed part of the definition of "open source" and that most projects using free licenses do not actually work this way.
+That is a really good point : what’s the point of saying that free licenses allow for collaborative work which hopefully will improve quality if collaborative open source projects are actually uncommon in the first place.
+
+# Free or Open Source Software
+
+The first article is interesting as a sort of historical report on the invention of the term "open source software".
+Because its point is not to convince readers that "open source" should be used instead of "free software", there’s not a lot to say about it.
+It gives good insight on the dynamics and people at play in the emergence of the term "open source software".
+However, because of its historical angle, it's not very specific on the reasons for needing this new term – the only one that's given is not critical to my opinion – and doesn't really assess the qualities of it ("*not ideal,* \[but\] *good enough*").
+Also, it shows that open source originates in a marketing strategy.
+That could explain why the definition of open source takes some liberties with reality (marketing is not known for its regards for rigor and ethics).
+The point I'm trying to make is addressed in this citation from the second article :
+"*By emphasizing freedom over practical advantages, free software's advocacy **is rooted in a technical reality in a way that open source is often not**.*".
+In my opinion, the author of the second article, gives many convincing arguments to prove its point, despite the remarks I share on each one.
+It helps highlighting flaws in the definition, implicit evocations and promotion of the term "open source software", even if I think they are very minor.
+
+As a conclusion to this post, I’ll remind you of a fun fact : the name of this course is HFOSS which stands for Humanitarian, Free **and** Open Source Software.
+
+[coin-open-source]: https://opensource.com/article/18/2/coining-term-open-source-software
+[free-soft-better]: https://mako.cc/writing/hill-when_free_software_isnt_better.html

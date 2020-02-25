@@ -1,0 +1,140 @@
+---
+layout: post
+title:  "Blog Post 6 - Bug Fix"
+date:   2020-02-25 9:45:00 +0100
+categories: assignment
+---
+
+This blog post documents an assignment that’s been ongoing for several weeks now: **the bug fix assignment**.
+The objectives of this assignment were to find a free-licensed GitHub project containing already signaled issues, pick one, and start to discuss with the repo’s maintainers on the associated thread in order to eventually issue a pull request providing a fix to the issue.
+You can find the specifications for the assignment and some tips in this [course wiki article][bugfix-wiki].
+
+I should probably mention that this is my **first contribution** to the free / open source community.
+That’s why I will report on every step of my work in detail, assessing the reasons for them and difficulties encountered as I go.
+
+# Finding the right project
+
+This part is not project specific, so it can be useful to other people in the same situation I was: **a beginner wanting to start contributing**.
+I had several criteria in mind when looking for a project, and a lot of them also emerged as I was searching.
+The ideal project had to be:
+- Free-licensed,
+- Rather small in terms of lines of code, to be able to grasp it in a reasonable amount of time,
+- Rather small in terms of community, not to be concerned about issues disappearing in front of me,
+- Active (relatively recent and frequent issues, pull request, posted by the community and treated by maintainers),
+- Listing beginner issues and giving clear contribution guidelines,
+- And optionally interesting to me.
+
+That made up for a fair amount a criteria, cutting down on the number of adapted projects I could find.
+
+Before actively looking for new, unknown repos, I thought back of a piece of software I used in the past: [particles.js][particlesjs].
+This project is small and I knew how the code is organized.
+However, it seemed to be abandoned by its owner (the `master` branch is 5 years old, there are recent and regular open issues and PRs but none have been closed for 2 years).
+I thus went onto finding a new project.
+
+Here are the **consecutive strategies** I used to find such repositories.
+1. I first started to browse the Python and Fedora easy bug reports that are linked in the course wiki article.
+However, I quickly moved on because of the size and complexity of the project architectures involved, also, the issues listed didn’t seem that easy at first glance.
+2. I then tried looking into the explore tab on GitHub.
+However once again, every time I opened a project repo, I got scared of diving into a brand new, unknown project.
+3. Third and last method: search "easy github projects to contribute" on Google.
+
+This may seem like a desperate attempt but it’s the one that led me to find the right repo.
+It actually led me to finding a [GitHub repo][easy-bug-fixes] filled to the brim with links to GitHub issue pages filtered by "first good issue" tag (or equivalent).
+This allowed me to browse way more efficiently.
+What I did for each repo was to check if there were any remaining open issues tagged as easy, then check for its activity and what exactly the project is about.
+Finally, I would consider reading actual issues to figure out if I could do something about them in a reasonable amount of time.
+I went through many of the Java and Javascript repositories and finally ended up checking out a [LaTeX repo][bugfix-repo].
+The project aims at providing good LaTeX pseudo-code for various algorithms.
+There are many beginner issues, it's not crowded with people wanting to contribute.
+I immediately thought **it could be the one**.
+Even the optional criterion was filled: I enjoy working with algorithms.
+
+# Getting familiar with the project
+
+It was then time to go into more depth in the repository.
+I started by reading thoroughly the README.md main file to gather as much information as possible.
+The project aims at providing LaTeX pseudo-code for various algorithms.
+It requires contributors to follow specific **coding standards** that make the pseudo-code as language-independent as possible.
+At the time I still wasn’t sure where exactly to look for these coding standards specifications.
+The maintainers use a chatting system called [Gitter](https://gitter.im/) and invite contributors to ask questions on their channel.
+A CODE_OF_CONDUCT.md file was added to the repo after my contribution, and thus wasn't taken into account.
+
+I also began looking into the various beginner issues (the maintainer uses specific flags to describe issues).
+Among the issues tagged as “good first issue”, one caught my attention.
+It was called “[New Here? Read me first!][new-here]” and was used as a thread to explain the contribution guidelines, as a complement to the main README file.
+The recommended workflow involves: 
+1. Getting assigned to an issue by posting on its thread.
+2. Solving the question in any programming language using [LeetCode](https://leetcode.com/).
+3. Cleaning up the code and translating it to pseudo-code on [Overleaf](https://www.overleaf.com/).
+4. Going through the guidelines on the front page of the repo to submit the code.
+
+Other issues mainly refer to new algorithms to implement, which was quite handy as it didn't require me to understand a super complex context before actually working on solving the issue.
+I chose an issue called [“Pseudocode for k-th largest element in a stream”][bugfix-issue], as it didn’t strike me as infeasible and as no one had yet posted a comment in the thread.
+
+As the guidelines stated, I posted on the tread, explaining that I wanted to contribute and asking questions about what LeetCode was and what specific coding standards were to be followed.
+LeetCode is an “online judge for interview preparations”.
+It gives the opportunity to solve algorithmic problems in many languages and helps to assess the correctness and efficiency of the solution proposed.
+As far as coding standards were concerned, I would have to refer to existing code to get an idea of what had to be done.
+
+# Fixing the bug
+
+The goal of the algorithm, as the title of the issue suggests, is to output the Kth largest element as soon as we encounter a new element of the stream.
+The LeetCode page for this problem suggested using a two-method `java` class as the structure for the solution.
+I worked on the algorithm on LeetCode and came up with two solutions, both of which passed LeetCode's tests:
+- The first one used a `PriorityQueue`, was short and very efficient.
+- The second one used a simple array, was longer and less efficient (as I implemented rather simple algorithms myself: quicksort and insertion in sorted array).
+
+The two options were discussed with the maintainer and the first one was chosen to be appropriate for the pseudo-code translation.
+
+As you can see, the algorithm is pretty straightforward:
+```java
+class KthLargest {
+    
+    private int k;
+    private PriorityQueue<Integer> q;
+    
+    public KthLargest(int k, int[] nums) {
+        this.k = k;
+        this.q = new PriorityQueue<Integer>();
+        
+        for(int i: nums)
+            q.offer(i);
+    }
+    
+    public int add(int val) {
+        q.offer(val);
+        while(q.size() > k)
+            q.poll();
+        return q.peek();
+    }
+}
+```
+
+I then began translating it to LaTeX pseudo-code on Overleaf, taking inspiration from other algorithms from the repository.
+I forked the repository on my GitHub account and cloned it to have a local version.
+I also added the original repository as remote, to keep track of any changes before submitting the pull request (and avoid potential merge conflicts).
+I added the pseudo-code to a location that seemed appropriate, following the guidelines from the README file.
+I pushed the changes to my fork and issued a [pull request][bugfix-pr].
+
+The maintainer requested a few minor changes and provided a fix for them.
+I just had to review the change requests, mark them as resolved, and update my code.
+
+**Finally, my code was merged!**
+
+# Useful links
+
+These are all the relevant links for this assignment.
+All the discussions mentioned in the post happened in the thread associated to the issue.
+- [Repository][bugfix-repo]
+- [Issue][bugfix-issue]
+- [Pull request][bugfix-pr]
+- [Merge commit][bugfix-commit]
+
+[bugfix-wiki]: https://github.com/ritjoe/hfoss/wiki/bugfix
+[particlesjs]: https://github.com/VincentGarreau/particles.js/
+[easy-bug-fixes]: https://github.com/MunGell/awesome-for-beginners
+[bugfix-repo]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode
+[new-here]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode/issues/31
+[bugfix-issue]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode/issues/40
+[bugfix-pr]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode/pull/94
+[bugfix-commit]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode/commit/489ff4f6ad9c5c5ad84400b731c0f80f7d21d6bf

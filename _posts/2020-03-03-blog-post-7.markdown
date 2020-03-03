@@ -7,7 +7,7 @@ categories: assignment
 
 As a computer science student, it's not rare that I take part in projects, often as part of an assignment for a class, sometimes on my own.
 Before taking this course (HFOSS), I had of course heard about free and open source software.
-However, I did not really know what it implied and what tools I used were free and open source.
+However, I did not really know what it implied and which tools I was using were free and open source.
 This blog post aims at assessing what tools that I currently use for two of my current projects are actually open source.
 
 # Designing a secure online election system

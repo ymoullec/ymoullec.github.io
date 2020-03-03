@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Blog Post 7 - An open source view of my current projects"
+date:   2020-03-03 16:30:00 +0100
+categories: assignment
+---
+
+As a computer science student, it's not rare that I take part in projects, often as part of an assignment for a class, sometimes on my own.
+Before taking this course (HFOSS), I had of course heard about free and open source software.
+However, I did not really know what it implied and what tools I used were free and open source.
+This blog post aims at assessing what tools that I currently use for two of my current projects are actually open source.
+
+# Designing a secure online election system
+
+As part of my security class, I got to work with some technology that was new to me.
+For this class’s main project, we are to develop a program that makes use of the security principles reviewed in class, taking inspiration from various research papers.
+Our group chose to go for **a secure online election system** (which is kind of an oxymoron, but we're not going to dive into this right now).
+
+We chose **Python** as the main programming language we’re going to be using.
+I’ve already worked with Python in the past, but I’d assess my Python knowledge and skills as quite shallow.
+Python is, as I expected after completing the bug fix assignment, a free and open source programming language owned by the Python Software Foundation.
+I wasn't able to understand exactly what license it uses but it's open source for sure.
+
+We also chose to use a web framework to facilitate coding the website, especially the backend and database management part.
+The framework is called [**Django**][django].
+It is also licensed under a free and open source software license : the BSD license.
+
+Finally, I decided to set up a Python virtual environment using **virtualenv**.
+This is the part of programming that horrifies me the most.
+Having to deal with setting up working environments is a real nightmare and is what often makes me give up on projects.
+This time, I was surprisingly successful in getting a virtual environment working on my computer by using [this documentation][venv].
+I'm now sure that my environment uses the same versions of Django and Python and the same plugins as the other members of my team.
+This tool is also licensed under a free and open source license : the MIT License (MIT).
+
+All of this make up for a pretty open-source-oriented project.
+Even vscode that I use as IDE/text editor is licensed under the MIT license.
+
+# Developing my first android app
+
+About a week ago, I started working on **developing my first android app**.
+
+I daily use notes applications to keep track of homework assignments, grocery shopping and various todo lists.
+For a long time now, I’ve used Google’s Note Keep application.
+It basically does everything you need it to do.
+However, I’m not particularly fond of sharing yet another chunk of my personal information with Google.
+That’s why I decided to code a similar app myself.
+I’ve also wanted to learn how to code android apps for a while, which was another motivation to start this project.
+
+Doing so, I wondered what was open source licensed and what wasn’t as far as the tools, IDE, and code I used were concerned.
+The Android operating system is part of the [AOSP][aosp] which stands for **Android Open Source Project** and which, as its name suggests, is open source.
+However, [some people argue that Google controls it too much][android-google].
+That doesn't really seem compatible with the free and open source philosophy.
+What’s also argued in the article is that the base of the system is indeed open source, but that this base is purposely paired with key proprietary apps and services.
+Android Studio, the IDE I use to code my app is also surprisingly part of the AOSP, which means it’s open source as well.
+
+For now, I don’t really know what I’m going to do with the app once it’s finished, I don’t even know if I’m going to make use of it myself.
+But if I end up being confident enough to decide to make it available to the public (which is not likely), it may be a good opportunity to make my first decent contribution to the FOSS community.
+I would however need to look into the legal implications in more detail.
+
+[django]: https://www.djangoproject.com/
+[venv]: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+[aosp]: https://source.android.com
+[android-google]: https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/

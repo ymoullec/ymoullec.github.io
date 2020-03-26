@@ -1,0 +1,198 @@
+---
+layout: post
+title:  "Community architecture assignment"
+date:   2020-03-26 17:00:00 +0100
+categories: assignment
+---
+
+## Introduction to OhMyZsh
+
+Zsh is a shell (like bash).
+OhMyZsh is a framework built on top of zsh that's goal is to allow for customization options, enabling users to have **plugins** and **themes**.
+It also provides what they think are the best settings for zsh from the start.
+It's thus targeted at any user or developer wanting to enhance it's zsh experience.
+The project's code is composed of 98,7% of shell code (zsh shell code).
+
+The project was created by [robbyrussell][robbyrussell] in 2009.
+It's a "[Planet Argon][planet-argon]" project.
+Planet Argon is an IT service company that helps companies with existing Ruby on Rails web applications.
+OhMyZsh is currently being maintained by [mcornella][mcornella].
+The initial commit was made in August 2009, and the most recent was made 6 hours ago, at the time I'm writing.
+
+### Size and complexity
+
+To quantify the **amount of code** in the project, this command was run:
+
+```git ls-files | xargs wc -l```
+
+It all adds up to **62942 lines** in total.
+I'm not sure if it qualifies the project as a large one or not, most of the code being spread out into very many different plugins and themes.
+To give an element of comparison, the class's repository is 51043 lines long in total.
+We also have to take into account that it's likely that some of this code was not handwritten.
+I think we can safely say that this project is not the smallest project there is, but that it's not huge either.
+
+As it is explained in more detail in the [Governance, Community contribution](#governance-community-contribution) section, **over 1500 developers have made contributions** to this project (1557 to be precise), however, only about 10 of them have made significant contributions (which I've arbitrarily fixed to 20 commits or a thousand lines of added code).
+
+To give some more GitHub statistics, 2.6k GitHub users watch the repo, 106k have stared it, and 19.1k have forked it.
+Taking these numbers into account, I think we can safely say that **at least 106k people are using (or have used) OhMyZsh**.
+
+### Documentation and Contributing guidelines
+
+The project provides **very extensive [documentation][documentation]**.
+This is not really a project you code with, so it doesn't really provide code samples.
+The few code samples it would need provide are indeed provided (see [customization page][customization] for example).
+It's also really well organized.
+There's an [FAQ][faq] section that answers questions ranging from the most simplistic (which is a good sign as it doesn't assume users already know everything about the project) to common problems, through installation guides.
+
+OhMyZsh also has **clear contributing guidelines**.
+This [page][community] references all useful standard Markdown files related to the community.
+It includes the main README file, the code of conduct, contributing guidelines, the license, issue and pull request templates.
+Contributing guidelines include a "Getting Started" section dedicated to new contributors.
+It links to basic documentation on forks and PRs.
+
+### Important links
+
+- [Documentation][documentation]
+- [Source Code repository][repo]
+- [Project Website][website]
+- Communication channels
+    - IRC Channel : #oh-my-zsh (it is apparently [pretty quiet][source-irc], and may not be official)
+    - Other communication channels : [Gitter][gitter], [Twitter][twitter]
+    - No mailing list nor mailing list archive
+
+## Comparison with the bugfix project
+
+The open source project I worked with for the [bugfix assignment][bugfix] was called [Algorithmic-Pseudocode][bugfix-repo].
+It contrasts quite a lot with OhMyZsh but also has a few similarities.
+I'm going to focus on three aspects: **scale**, **goal**, and **communication**.
+
+1. Algorithmic-Pseudocode is run by a single person ([Just-A-Visitor][visitor]), somewhat like OhMyZsh.
+However, it's a much smaller project.
+It's only 3573 lines long, and has a total of 13 contributors (including myself).
+329 people have stared it, which means very few people actually use it.
+2. Then Algorithmic-Pseudocode's goal is not to develop a piece of software like OhMyZsh is.
+It's goal is to create and provide a collection of pdf documents containing various pseudo-code algorithms.
+This is done using LaTeX.
+Also, the repo has a strong pedagogical aspect to it.
+Indeed, it really pushes newcomers to make contributions to the repo to feed the collection of algorithms by leaving open issues containing rather simple algorithms to implement.
+I feel like it's at Algorithmic-Pseudocode's core, at the same level as providing the actual pseudocode while, for OhMyZsh, the main goal is to develop software (even if the community plays a important role in OhMyZsh as well).
+3. Finally, the communication aspect of the project is quite similar to OhMyZsh.
+It also uses Gitter as a communication channel, and relies heavily on GitHub mechanics (issues and PRs) to manage community contributions.
+It however doesn't have an associated website or Twitter account due to its reduced scale.
+
+## Governance, Community contribution
+
+OhMyZsh is of course an open source piece of software.
+It's licensed under the [MIT license][license].
+
+mcornella seems to be **the only person who is currently maintaining the project**.
+This includes answering the messages posted on issue threads, actually fixing the issues, and managing the pull requests.
+He is the current official maintainer of the project.
+robbyrussell **created the project** and was thus more active in its early years.
+
+There are only two members in the [ohmyzsh organization][organization] on GitHub: mcornella and [Larson Carter][larson-carter].
+I haven't found any contribution from Larson Carter to the main repository or any of the side repositories.
+I'm not sure what is his role in the organization.
+Quite surprisingly, robbyrussell is not part of the GitHub organization even if he created the project and was active at its beginnings.
+This means there probably was a leadership transition from him to mcornella.
+However, robbyrussell is still active on the Twitter account and he is referenced on the website.
+
+A total of **1557 people have contributed** to the project.
+On the [GitHub contributors page][contributors], we can see more statistics about contributions.
+Only 8 people have made more than 20 commits to the project (either directly or through merged pull requests).
+A different set of 8 people have made significant addition to the code (more than a thousand lines of code).
+This includes the current maintainer of the projects and its creator.
+
+I don't really know what these few people's working status is with respect to OhMyZsh.
+Most of them are likely to be simple GitHub contributors (thus unpaid).
+robbyrussell works for Planet Argon and doesn't seem to be very involved in the project anymore so I don't expect he would be paid.
+I especially wonder about mcornella's status.
+However, I didn't really feel like asking them: "Who gets the money around here?", so these questions will stay unanswered.
+
+mcornella would definitely be the person who has the highest amount of **unique knowledge** as he did most of the writing and patch reviewing.
+If I was going to contribute to the project, but ran into trouble or hit blockers, I would most probably contact him, as he seems to be the only one dealing with community contributions and seems to have the most knowledge about the project.
+
+Most of the people who contributed to the project have made punctual contributions and would not be considered as part of the core team.
+Because the project is quite old, there has been quite some **turnover**.
+People usually contribute for up to a year.
+There's of course the exception of the current maintainer who started contributing in 2015, the creator, who still contributes on occasions to this day, and a few others like [felipec][felipec] who's been making contributions since 2013.
+
+The following chart displays the **number of commits over the years**.
+
+![useful image]({{ site.url }}/assets/2020-03-26-commarch-chart.png)
+
+We can see that participation to the project doesn't seem to go down (or up) as time passes.
+There's of course noise in the graph but **the overall trend is almost constant**, with a bit more activity at the start of the project (which is expected) and a period of lower activity in 2017.
+
+Based on what has been said in this section, I would say this project started small in terms of staff, and hasn't grown that much over the years.
+A single person has been managing the community contributions while a few people helped along for limited periods of time.
+Because of this reduced scale, decisions were probably made by the only person in charge of the project.
+However, this doesn't mean that the community's suggestions haven't been heard and taken into account, just that the final decision was most likely made by the maintainer.
+The high number of contributors shows the important place of the community within the project.
+
+## Robustness
+
+I could get to work neither GitByABus nor GitByATruck on OhMyZsh even if I successfully analyzed sugar-quickstart [like the instructor suggested][gbab].
+I spent several hours trying to setup the appropriate environment to run these two pieces of software with no success.
+
+However, I can still try to assess the robustness of the project.
+In my opinion, **it would fail** both the "The Raptor Test" and the "Hit by a Bus Test" because it relies heavily on a single person who probably detains highest amount of unique knowledge.
+There are only two members in the OhMyZsh GitHub organization, which would cause admin rights problems if they were to suddenly disappear.
+
+## OhMyZsh's "Callaway Coefficient of Fail"
+
+This is the detail of the coefficient's calculation (taken from this [website][coeff]):
+
+| Category | Points of FAIL | Issues  |
+| -------- | -------------- | ------- |
+| Size | 0 | - |
+| Source control | 0 | - |
+| Building from source | 0 | - |
+| Bundling | 0 | - |
+| Libraries | 0 | - |
+| System Install | 0 | - |
+| Code Oddities | 0 | - |
+| Communication | 10 | No mailing list |
+| Releases | 0 | - |
+| History | 0 | - |
+| Licensing | 10 | No per-file licensing |
+| Documentation | 0 | - |
+
+This adds up to 20+ points of FAIL, the only two slight issues being that there is neither per-file licensing nor mailing list.
+The project community relies on GitHub, Twitter, and a newsletter instead of a mailing list.
+I'm not quite sure about the sections: Building from source, Bundling and Libraries.
+Indeed, I'm not yet intimate with the code and installation mechanisms details.
+I chose to put 0 as default as the project seems to be handled very professionally overall.
+A score of 20 describes **a project that is probably doing okay, but that could be better**, which confirms my first impression.
+
+## Conclusion
+
+To conclude, I'll give my overall opinion on such a project.
+I think it's very clean and well organized, which is very important to me.
+Contributing is made very easy by it providing the right resources (see [contributing guidelines](#documentation-and-contributing-guidelines)).
+Maybe one of its weaknesses would be the size of the maintaining team which is quite reduced.
+That may lengthen the time it takes to get issues to be fixed or PRs to be reviewed.
+As far as working in such a team is concerned, I think it would be enjoyable.
+
+[documentation]: https://github.com/ohmyzsh/ohmyzsh/wiki
+[repo]: https://github.com/ohmyzsh/ohmyzsh
+[website]: https://ohmyz.sh/
+[customization]: https://github.com/ohmyzsh/ohmyzsh/wiki/Customization
+[source-irc]: https://github.com/ohmyzsh/ohmyzsh/issues/3784
+[gitter]: https://gitter.im/robbyrussell/oh-my-zsh
+[twitter]: https://twitter.com/ohmyzsh
+[robbyrussell]: https://github.com/robbyrussell
+[mcornella]: https://github.com/mcornella
+[larson-carter]: https://github.com/larson-carter
+[organization]: https://github.com/ohmyzsh
+[felipec]: https://github.com/felipec
+[community]: https://github.com/ohmyzsh/ohmyzsh/community
+[planet-argon]: https://www.planetargon.com/
+[license]: https://github.com/ohmyzsh/ohmyzsh/blob/master/LICENSE.txt
+[contributors]: https://github.com/ohmyzsh/ohmyzsh/graphs/contributors
+[bugfix-repo]: https://github.com/Just-A-Visitor/Algorithmic-Pseudocode
+[visitor]: https://github.com/Just-A-Visitor
+[coeff]: https://www.theopensourceway.org/wiki/How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL
+[faq]: https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ
+[bugfix]: https://ymoullec.github.io/assignment/2020/02/25/blog-post-6.html
+[gbab]: https://github.com/ritjoe/hfoss/wiki/commarch#4--run-git-by-a-bus-analysis-on-your-project
